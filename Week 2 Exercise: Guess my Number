@@ -1,22 +1,11 @@
-#guessing game
+# spoilers alert. Storing code here for my own record. Please do not look if you do not want the answers to the question
+
 low = 0 
-x = 50
-high = 99
+high = 100
 ans = 50
 
 
-while True:
-  try:
-    initial_guess = int(input("Please think of a number between 0 and 100!"))
-  except ValueError:
-    print ("Sorry, I did not understand your input.")
-    continue 
-  if initial_guess >= 0 and initial_guess <100:
-    break
-  else:
-    print ("Sorry, I did not understand your input.")
-    continue
-  
+print ("Please think of a number between 0 and 100!")
 while True:
     print ("Is your secret number " + str(ans) + "?")
     guess = input("Enter 'h' to indicate the guess is too high. \
